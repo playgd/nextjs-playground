@@ -1,2 +1,3 @@
-# nextjs-playground
-Playing with Next.js
+# nextjs playground
+
+> Playing with Next.js
