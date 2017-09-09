@@ -1,8 +1,9 @@
 'use strict'
 
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
+import Link from 'next/link'
 
-export default class HelloWorld extends Component {
+export default class HelloWorld extends PureComponent {
   static getInitialProps = ({ req }) => {
     console.log('getInitialProps')
     return { title: 'Title came from backend!' }
@@ -23,6 +24,13 @@ export default class HelloWorld extends Component {
 
   render () {
     console.log('render')
-    return <h1>{this.props.title}</h1>
+    return (
+      <div>
+        <h1>{this.props.title}</h1>
+        <Link href='/about'>
+          <a>About page</a>
+        </Link>
+      </div>
+    )
   }
 }
