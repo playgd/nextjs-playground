@@ -1,7 +1,7 @@
 'use strict'
 
 import React, { PureComponent } from 'react'
-import Link from 'next/link'
+import Header from '../components/header'
 
 export default class HelloWorld extends PureComponent {
   static getInitialProps = ({ req }) => {
@@ -26,10 +26,8 @@ export default class HelloWorld extends PureComponent {
     console.log('render')
     return (
       <div>
+        <Header />
         <h1>{this.props.title}</h1>
-        <Link href='/about'>
-          <a>About page</a>
-        </Link>
       </div>
     )
   }
