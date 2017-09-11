@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import Layout from '../components/layout'
-import to from '../components/to'
+import to from '../helpers/to'
 
 const Post = ({ show }) => (
   <Layout>

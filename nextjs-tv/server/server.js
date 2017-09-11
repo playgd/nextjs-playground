@@ -1,6 +1,6 @@
 import express from 'express'
 import next from 'next'
-import to from '../components/to'
+import to from '../helpers/to'
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })

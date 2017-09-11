@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import Link from 'next/link'
 import Layout from '../components/layout'
-import to from '../components/to'
+import to from '../helpers/to'
 
 const Index = ({ shows }) => (
   <Layout>
